@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container-fluid calc__body">
+      <div class="container calc__display">
+        <!-- <input type="text" id="typed" value="" /> -->
+        <h4 id="typed"></h4>
+      </div>
+      <div class="container calc__btn--wrapper">
+        <div class="row row-1">
+          <div
+            class="btn op bg-primary m-1"
+            id="all-clr-btn"
+            onclick="allClr()"
+          >
+            AC
+          </div>
+          <div class="btn op bg-primary m-1" id="clr-btn" onclick="clr()">
+            &leftarrow;
+          </div>
+          <div
+            class="btn op bg-primary m-1"
+            id="percent-btn"
+            onclick="display('%')"
+          >
+            %
+          </div>
+          <div
+            class="btn op bg-primary m-1"
+            id="divide-btn"
+            onclick="display('/')"
+          >
+            /
+          </div>
+        </div>
+        <div class="row row-2">
+          <div
+            class="btn bg-primary m-1"
+            id="nine-btn"
+            value="9"
+            onclick="display('9')"
+          >
+            9
+          </div>
+          <div class="btn bg-primary m-1" id="eight-btn" onclick="display('8')">
+            8
+          </div>
+          <div class="btn bg-primary m-1" id="seven-btn" onclick="display('7')">
+            7
+          </div>
+          <div
+            class="btn op bg-primary m-1"
+            id="multiply-btn"
+            onclick="display('*')"
+          >
+            *
+          </div>
+        </div>
+        <div class="row row-3">
+          <div class="btn bg-primary m-1" id="six-btn" onclick="display('6')">
+            6
+          </div>
+          <div class="btn bg-primary m-1" id="five-btn" onclick="display('5')">
+            5
+          </div>
+          <div class="btn bg-primary m-1" id="four-btn" onclick="display('4')">
+            4
+          </div>
+          <div
+            class="btn op bg-primary m-1"
+            id="minus-btn"
+            onclick="display('-')"
+          >
+            -
+          </div>
+        </div>
+        <div class="row row-4">
+          <div class="btn bg-primary m-1" id="three-btn" onclick="display('3')">
+            3
+          </div>
+          <div class="btn bg-primary m-1" id="two-btn" onclick="display('2')">
+            2
+          </div>
+          <div class="btn bg-primary m-1" id="one-btn" onclick="display('1')">
+            1
+          </div>
+          <div
+            class="btn op bg-primary m-1"
+            id="plus-btn"
+            onclick="display('+')"
+          >
+            +
+          </div>
+        </div>
+        <div class="row row-5">
+          <div
+            class="btn bg-primary m-1"
+            id="dblzero-btn"
+            onclick="display('00')"
+          >
+            00
+          </div>
+          <div class="btn bg-primary m-1" id="zero-btn" onclick="display('0')">
+            0
+          </div>
+          <div
+            class="btn bg-primary m-1"
+            id="decimal-btn"
+            onclick="display('.')"
+          >
+            .
+          </div>
+          <div class="btn op bg-primary m-1" id="equals-btn" onclick="result()">
+            =
+          </div>
+        </div>
+      </div>
+      <a
+        href="https://gitanilsen.github.io/portfolioAnilSenV2/"
+        style="text-align: center; color: #fff; text-decoration: underline;"
+        target="_blank"
+      >
+        <p><em>By Anil Sen</em></p>
+      </a>
+    </div>
+    <!-- Javascript -->
+    <script src="main.js"></script>
+  </body>
+</html>
